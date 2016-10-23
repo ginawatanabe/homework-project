@@ -5,7 +5,7 @@ html, body, header, p, ul, h1, h2, h3, h4, h5 {
 }
 
 .container {
-  height: 1000px;
+  height: 800px;
   background-color: yellow;
   display: flex;
   flex-direction: column;
@@ -41,11 +41,36 @@ a {
 }
 
 section.content {
-  height: 1000px;
+  height: 800px;
   background-color: pink;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+section.dates {
+  height: 600px;
+  width: 250px;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.dates .main-category {
+  height: 200px;
+  width: 230px;
+  background-color: red;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+section.dates .subcategory {
+  height: 100px;
+  width: 230px;
+  background-color: purple;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 /*section.current-dashboard {
@@ -60,12 +85,14 @@ section.dropdown {
 }*/
 
 section.block-container {
-  height: 820px;
+  height: 600px;
   width: 1000px;
   background-color: red;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;*/
+  display: flex;
   justify-content: center;
 }
 
@@ -76,43 +103,46 @@ section.planning {
   display: flex;
   justify-content: space-around;
 }
+
 section.calendar {
-  height: 400px;
-  width: 600px;
-  background-color: black;
+  height: 800px;
+  width: 1000px;
 }
 
 section.calendar .month {
   height: 60px;
-  width: 600px;
+  width: 1000px;
   background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 section.calendar .month ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around;
 }
 
-section.planner {
-  height: 400px;
-  width: 200px;
-  background-color: purple;
-}
-section.notes {
-  height: 400px;
-  width: 900px;
-  background-color: aqua;
-}
-section.block {
-  height: 150px;
-  width: 150px;
-  background-color: orange;
-  margin: 10px;
+section.calendar .weekdays ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
 }
 
-/*section.my-block {
-  height: 300px;
-  width: 300px;
-  background-color: brown;
-}*/
+section.calendar .days ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 40px;
+}
+
+section.calendar .days ul li {
+ height: 95px;
+ width: 120px;
+ background-color: orange;
+ flex-grow: 1;
+ border: solid black 1px;
+}
